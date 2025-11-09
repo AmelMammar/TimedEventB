@@ -13,8 +13,7 @@ To create a task using our plugin, click on the  button **Te**. Then select its 
 
 For each task _A_, we have  a variable _Scheduler_A_ which denotes an increasing sequence of value pairs (_start_, _end_) for each  execution of the task _A_. An atomic task  _A_ is represented by a unique event _Atomic_A_. Event _Atomic_A_has the follwowing implicit guard/action:
 
-guard: CK > last(_Scheduler_A_) //to ensure that two different instances of the task _A_ do not occur at the same time
-
+guard: CK > last(_Scheduler_A_) //to ensure that two different instances of the task _A_ do not occur at the same time  
 action: _Scheduler_A_:=_Append_(_Append_(_Scheduler_A_, _CK_), _CK_)//Append denotes the append operation of sequences
 
 On an atomic task, a min/max timing periodicity constraint my be defined. The periodicity constraint denotes the min/max amount of time that separates the begining of two 
@@ -22,6 +21,31 @@ conseuctive instances. This constraint induces the following implicit guard:
 
 guard_per: Scheduler_A /= {} CK - BefLast(Scheduler_A) >=/<= PSMin/PSMax //BefLast(Scheduler_A) denotes the before last element of the sequence _Scheduler_A_.
   
+**Case of a task with duration**: the creation of a task with duration produces the following Event-B specificaition. Two events _Start_A__ and __End_A_are defined. These events includes the following implicit guards/actions:
+
+1. **Event Start_A**:  
+      guard: $\exists$ $k$. k $\in$ NAT $\wedge$ **size**(_Scheduler_A_) = $2k$
+      action:  _Scheduler_A_:=_Append_(_Scheduler_A_, _CK_)
+
+3. **Event End_A**:  
+      guard: $\exists$ $k$. k $\in$ NAT $\wedge$ **size**(_Scheduler_A_) = $2k$ + 1 $\wedge$ _CK_ - **last**(_Scheduler_A_)  $\geq$/$\leq$ _DMin_/_DMax_
+      action:  _Scheduler_A_:=_Append_(_Scheduler_A_, _CK_)
+
+
+The _duration_ property is attached to the end event while the seperation and periodicity one are associated with the start event. For each property, users can specify mimimun/maximum values.
+  
+   <img width="1172" height="156" alt="NatomicTask" src="https://github.com/user-attachments/assets/ea2a3882-f96b-4793-b577-64693220a99d" />
+
+   With a task _A_, the following elements are associated:
+
+   (_ii_)_as the task _A _ has a duration, two event _start_A__ and __end_A_. As one can see, the _duration_ property is attached to the end event while the seperation and periodicity one are associated with the start event. For each property, users can specify mimimun/maximum values.
+   
+   
+
+   
+
+
+
 
 Depnding on the type of a task, 
 
@@ -35,17 +59,4 @@ We distinguish two timing property kinds:
 
   This produces the following Event-B specification:
   
-   <img width="1294" height="721" alt="taskDuration" src="https://github.com/user-attachments/assets/b1e51e2a-67d2-4145-9540-5b6632191e74" />
-
-   To deal with timing properties, a master variable _CK_ along with a Progress event are defined. This event makes time progress by a given non null amont of time _step. Of course, the master varaible and the associated event are created once while creating the first task.
-   
-   With a task _A_, the following elements are associated:
-
-   (_i_)  a variable _Scheduler_A_which denotes an increasing sequances of value pairs (_start_, _end_) for each  execution of the task _A.
-   
-   (_ii_)_as the task _A _ has a duration, two event _start_A__ and __end_A_. As one can see, the _duration_ property is attached to the end event while the seperation and periodicity one are associated with the start event. For each property, users can specify mimimun/maximum values.
-   
-   
-
-   
    

@@ -35,7 +35,7 @@ guard_per: Scheduler_A /= {} CK - BefLast(Scheduler_A) >=/<= PSMin/PSMax //BefLa
  (a) Seperation: puts a constraint on the elapsed time between the end of an ocurrence and the start of the  next one. 
  (b) Periodicity: puts a constraint on the elapsed time between the starts of two consecutive occurences. This constraint is associated with the start event. 
 
- Both properties are attached to the _Start_A_ (resp. _Atomic_A_) event for non-atomic (resp. atomic) task. They induce implicit invariants/guards than can be displayed using ProB(). https://stups.hhu-hosting.de/rodin/prob1/nightly
+ Both properties are attached to the _Start_A_ (resp. _Atomic_A_) event for non-atomic (resp. atomic) task. They induce implicit invariants/guards than can be displayed using [ProB](https://stups.hhu-hosting.de/rodin/prob1/nightly).
 
  
    

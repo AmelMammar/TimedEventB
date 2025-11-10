@@ -21,7 +21,7 @@ conseuctive instances. This constraint induces the following implicit guard:
 
 guard_per: Scheduler_A /= {} CK - BefLast(Scheduler_A) >=/<= PSMin/PSMax //BefLast(Scheduler_A) denotes the before last element of the sequence _Scheduler_A_.
   
-**Case of a task with duration**: the creation of a task with duration produces the following Event-B specificaition. Two events _Start_A__ and __End_A_are defined. These events includes the following implicit guards/actions:
+**Case of a task with duration**: the creation of a task with duration produces the following Event-B specificaition. Two events _Start_A__ and __End_A_are defined. The _duration_ property (Minimun/maximum values DMin/DMax) is attached to the end event. These events include the following implicit guards/actions:
 
 1. **Event Start_A**:  
       guard: $\exists$ $k$. k $\in$ NAT $\wedge$ **size**(_Scheduler_A_) = $2k$
@@ -31,32 +31,11 @@ guard_per: Scheduler_A /= {} CK - BefLast(Scheduler_A) >=/<= PSMin/PSMax //BefLa
       guard: $\exists$ $k$. k $\in$ NAT $\wedge$ **size**(_Scheduler_A_) = $2k$ + 1 $\wedge$ _CK_ - **last**(_Scheduler_A_)  $\geq$/$\leq$ _DMin_/_DMax_
       action:  _Scheduler_A_:=_Append_(_Scheduler_A_, _CK_)
 
+ To both atomic and non atomic tasks, two additional properties can be attached:
+ (a) Seperation: puts a constraint on the elapsed time between the end of an ocurrence and the start of the  next one. 
+ (b) Periodicity: puts a constraint on the elapsed time between the starts of two consecutive occurences. This constraint is associated with the start event. 
 
-The _duration_ property is attached to the end event while the seperation and periodicity one are associated with the start event. For each property, users can specify mimimun/maximum values.
-  
-   <img width="1172" height="156" alt="NatomicTask" src="https://github.com/user-attachments/assets/ea2a3882-f96b-4793-b577-64693220a99d" />
+ Both properties are attached to the _Start_A_ (resp. _Atomic_A_) event for non-atomic (resp. atomic) task. They induce implicit invariants/guards than can be displayed using ProB(). https://stups.hhu-hosting.de/rodin/prob1/nightly
 
-   With a task _A_, the following elements are associated:
-
-   (_ii_)_as the task _A _ has a duration, two event _start_A__ and __end_A_. As one can see, the _duration_ property is attached to the end event while the seperation and periodicity one are associated with the start event. For each property, users can specify mimimun/maximum values.
-   
-   
-
-   
-
-
-
-
-Depnding on the type of a task, 
-
-We distinguish two timing property kinds:
-1. Mono-task properties: these properties include _duration_, _periodicity_ and _speration. 
-2. Bi-task properties: these properties mainly denote ordering properties like _followed _and _preceded.
-
-   
-   a. **Duration**:  To create a task, click on the  button **Te**. Then select _Non atomic task. 
-   <img width="1234" height="508" alt="createTak" src="https://github.com/user-attachments/assets/a3adc51b-4c04-406c-95dc-98c3c58f1330" />
-
-  This produces the following Event-B specification:
-  
+ 
    

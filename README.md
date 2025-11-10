@@ -39,5 +39,12 @@ guard_per: Scheduler_A $\neq$ $\emptyset$ $\Rightarrow$ CK - BefLast(Scheduler_A
 
  
    ## How to use TimedEventB
+   ### Components 
+   The plugin is composed of two main components:
+   1. The Rodin extension that permits to create tasks as Event-B decorated with timing constraints. 
+   2. The theory Scheduler that defines a new Event-B data type named _TaskScheduler_ along with different operators allowing to manipulate it (last, append,etc.). This theory also define a set of theorems and inference rules that help users to prove the correctness the timing properties on an Event-B component. 
+   
    ### Instalation
+   #### Instalation of the Rodin extension
+   #### Instalation of the theory
    

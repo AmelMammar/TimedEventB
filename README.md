@@ -47,4 +47,5 @@ guard_per: Scheduler_A $\neq$ $\emptyset$ $\Rightarrow$ CK - BefLast(Scheduler_A
    ### Instalation
    #### Instalation of the Rodin extension
    #### Instalation of the theory
+   Import the theory Scheduler under Rodin
    

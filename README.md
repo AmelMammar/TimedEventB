@@ -38,6 +38,6 @@ guard_per: Scheduler_A $\neq$ $\emptyset$ $\Rightarrow$ CK - BefLast(Scheduler_A
  Both properties are attached to the _Start_A_ (resp. _Atomic_A_) event for non-atomic (resp. atomic) task. They induce implicit invariants/guards than can be displayed using [ProB](https://stups.hhu-hosting.de/rodin/prob1/nightly).
 
  
-   ##How to use TimedEventB
-   ###Instalation
+   ## How to use TimedEventB
+   ### Instalation
    

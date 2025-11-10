@@ -57,8 +57,14 @@ guard_per: Scheduler_A $\neq$ $\emptyset$ $\Rightarrow$ CK - BefLast(Scheduler_A
    </p>
    
    The theory will then apprear under the _Event-B Explorer_ panel
-   
+    <p align="center">
    <img width="300" height="300" alt="importdone" src="https://github.com/user-attachments/assets/61221ad2-fb71-4ed2-b956-9c3a6ff2efe7" />
+   </p>
+  3. Create a project that defines a theory path to use the imported theory:
+  <p align="center">
+     <img width="1284" height="576" alt="createProj" src="https://github.com/user-attachments/assets/4f8d39b9-b301-464c-ae88-082aebe9a348" />
+</p>
 
-
+  
+  
    

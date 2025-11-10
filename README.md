@@ -1,5 +1,53 @@
 # TimedEventB
-The plugin **TimedEventB** permits to specify timing properties on Event-B models. These properties are mainly attached to tasks represented as Event-B events. For that purpose, we distinguish two task types:
+The plugin **TimedEventB** permits to specify timing properties on Event-B models. 
+
+
+   ## How to use TimedEventB
+   ### Components 
+   The plugin is composed of two main components:
+   1. The Rodin extension that permits to create tasks as Event-B decorated with timing constraints. 
+   2. The theory Scheduler that defines a new Event-B data type named _TaskScheduler_ along with different operators allowing to manipulate it (last, append,etc.). This theory also define a set of theorems and inference rules that help users to prove the correctness the timing properties on an Event-B component. 
+   
+   ### Instalation
+   #### Instalation of the Rodin extension
+   #### Instalation of the theory
+   Three steps are required: 
+   1. Install the theory plugin:
+      
+   2. Import the theory Scheduler under Rodin by selecting the entry _Import_under the menu _File_: 
+
+   <p align="center">
+   <img width="500" height="500" alt="importThe" src="https://github.com/user-attachments/assets/f24eb979-439d-42fb-8588-ba29779c2b5e" />
+   </p>
+   
+   The theory will then apprear under the _Event-B Explorer_ panel
+    <p align="center">
+   <img width="300" height="300" alt="importdone" src="https://github.com/user-attachments/assets/61221ad2-fb71-4ed2-b956-9c3a6ff2efe7" />
+   </p>
+  
+  3. Create a project that defines a theory path to use the imported theory according to the follwoing steps:
+  
+  <p align="center">
+     <img width="400" height="400" alt="createProj" src="https://github.com/user-attachments/assets/4f8d39b9-b301-464c-ae88-082aebe9a348" />
+   </p>
+
+<p align="center">
+   <img width="500" height="500" alt="theoPath" src="https://github.com/user-attachments/assets/78d3b84f-6e72-4501-872b-f4d9dd9aed04" />
+</p>
+
+  4. Create an Event-B machine to have access to the menu that permits the creation of timed tasks as depicted below:
+     
+<p align="center">
+   <img width="400" height="400" alt="createExample" src="https://github.com/user-attachments/assets/2e0b9a54-952a-4e0f-9cc4-7d9c5d655170" />
+</p>
+
+
+
+
+
+
+
+These properties are mainly attached to tasks represented as Event-B events. For that purpose, we distinguish two task types:
 
 1. Atomic tasks: these tasks are instantaneous and do not take time to complete.
 2. Non atomic tasks: these tasks are not instantaneous and have duration.
@@ -38,33 +86,6 @@ guard_per: Scheduler_A $\neq$ $\emptyset$ $\Rightarrow$ CK - BefLast(Scheduler_A
  Both properties are attached to the _Start_A_ (resp. _Atomic_A_) event for non-atomic (resp. atomic) task. They induce implicit invariants/guards than can be displayed using [ProB](https://stups.hhu-hosting.de/rodin/prob1/nightly).
 
  
-   ## How to use TimedEventB
-   ### Components 
-   The plugin is composed of two main components:
-   1. The Rodin extension that permits to create tasks as Event-B decorated with timing constraints. 
-   2. The theory Scheduler that defines a new Event-B data type named _TaskScheduler_ along with different operators allowing to manipulate it (last, append,etc.). This theory also define a set of theorems and inference rules that help users to prove the correctness the timing properties on an Event-B component. 
-   
-   ### Instalation
-   #### Instalation of the Rodin extension
-   #### Instalation of the theory
-   Three steps are required: 
-   1. Install the theory plugin:
-      
-   2. Import the theory Scheduler under Rodin by selecting the entry _Import_under the menu _File_: 
-
-   <p align="center">
-   <img width="500" height="500" alt="importThe" src="https://github.com/user-attachments/assets/f24eb979-439d-42fb-8588-ba29779c2b5e" />
-   </p>
-   
-   The theory will then apprear under the _Event-B Explorer_ panel
-    <p align="center">
-   <img width="300" height="300" alt="importdone" src="https://github.com/user-attachments/assets/61221ad2-fb71-4ed2-b956-9c3a6ff2efe7" />
-   </p>
-  3. Create a project that defines a theory path to use the imported theory:
-  <p align="center">
-     <img width="1284" height="576" alt="createProj" src="https://github.com/user-attachments/assets/4f8d39b9-b301-464c-ae88-082aebe9a348" />
-</p>
-
   
   
    

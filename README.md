@@ -47,5 +47,18 @@ guard_per: Scheduler_A $\neq$ $\emptyset$ $\Rightarrow$ CK - BefLast(Scheduler_A
    ### Instalation
    #### Instalation of the Rodin extension
    #### Instalation of the theory
-   Import the theory Scheduler under Rodin
+   Three steps are required: 
+   1. Install the theory plugin:
+      
+   2. Import the theory Scheduler under Rodin by selecting the entry _Import_under the menu _File_: 
+
+   <p align="center">
+   <img width="500" height="500" alt="importThe" src="https://github.com/user-attachments/assets/f24eb979-439d-42fb-8588-ba29779c2b5e" />
+   </p>
+   
+   The theory will then apprear under the _Event-B Explorer_ panel
+   
+   <img width="300" height="300" alt="importdone" src="https://github.com/user-attachments/assets/61221ad2-fb71-4ed2-b956-9c3a6ff2efe7" />
+
+
    

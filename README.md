@@ -2,6 +2,11 @@
   <large> chronoEventB</large>
 </p>
 
+<span style="font-size:3000000px">
+This text is larger than normal.
+</span>
+
+
 # **chronoEventB**
 The plugin **chronoEventB** permits to specify timing properties on Event-B models. Using this plugin, users have the possibililty to define _atomic_ tasks or tasks with _duration_ as specific Event-B events. To each task, _periodicity_ and _separation_ constaints may be attached. Moreover, ordering properties can be associated with a couple of tasks to state constaints on the occurence of their instances. These properties may be also timed.
 

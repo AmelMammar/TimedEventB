@@ -34,8 +34,9 @@ The plugin **chronoEventB** permits to specify timing properties on Event-B mode
    
    4. Select the plugin _ChronoEventB_ and press on _Next_ to complete the installation.
 
-      <img width="400" height="400" alt="last3" src="https://github.com/user-attachments/assets/a170364c-ce34-4fcf-b449-1de9bc109470" />
-      
+      <p align="center">
+       <img width="400" height="400" alt="last3" src="https://github.com/user-attachments/assets/a170364c-ce34-4fcf-b449-1de9bc109470" />
+       </p>
    #### Installation of the theory TaskScheduler
    Three steps are required: 
    1. Install the theory plugin: see [Here](https://wiki.event-b.org/index.php/Theory_Plug-in)

@@ -16,7 +16,18 @@ The plugin **chronoEventB** permits to specify timing properties on Event-B mode
    #### Installation of the Rodin extension
    To extend Rodin with the chronoEventB plugin, follow these steps:
    1. Download and unzip the zip file plugin.
-   2. Go to the menu
+   2. Go to the menu _Help...Install New Software_, then click the button _Add_:
+
+      <p align="center">
+       <img width="400" height="400" alt="firstST" src="https://github.com/user-attachments/assets/11882d9a-3296-43bb-9ff4-0a53a5f4e21b" />
+      </p>
+      
+   4. Click the button _Local_ and select the directory associated to the plugin:
+
+
+      
+
+      
        
    #### Installation of the theory TaskScheduler
    Three steps are required: 

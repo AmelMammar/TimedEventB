@@ -56,9 +56,6 @@ The plugin **chronoEventB** permits to specify timing properties on Event-B mode
   
   <p align="center">
      <img width="400" height="400" alt="createProj" src="https://github.com/user-attachments/assets/4f8d39b9-b301-464c-ae88-082aebe9a348" />
-   </p>
-
-<p align="center">
    <img width="500" height="500" alt="theoPath" src="https://github.com/user-attachments/assets/78d3b84f-6e72-4501-872b-f4d9dd9aed04" />
 </p>
 

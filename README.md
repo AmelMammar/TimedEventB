@@ -86,10 +86,13 @@ action: _Scheduler_A_:=_Append_(_Append_(_Scheduler_A_, _CK_), _CK_)//Append den
 On an atomic task, a min/max timing periodicity constraint my be defined. The periodicity constraint denotes the min/max amount of time that separates the begining of two 
 conseuctive instances. This constraint induces the following implicit guard: 
 
-guard_per: Scheduler_A $\neq$ $\emptyset$ $\Rightarrow$ CK - BefLast(Scheduler_A) $\geq$/$\leq$ PSMin/PSMax //BefLast(Scheduler_A) denotes the before last element of the sequence _Scheduler_A_.
+guard_per: _Scheduler_A_ $\neq$ $\emptyset$ $\Rightarrow$ CK - **BefLast**(_Scheduler_A_) $\geq$ / $\leq$ PSMin/PSMax //**BefLast**(_Scheduler_A_) denotes the before last element of the sequence _Scheduler_A_.
   
 **Case of a task with duration**: the creation of a task with duration produces the following Event-B specificaition. Two events _Start_A__ and __End_A_are defined. The _duration_ property (Minimun/maximum values DMin/DMax) is attached to the end event. These events include the following implicit guards/actions:
 
+<p align="center">
+<img width="600" height="120" alt="n" src="https://github.com/user-attachments/assets/7121ca69-12c3-4552-ba1f-c0d7794def10" />
+</p>
 1. **Event Start_A**:  
       guard: $\exists$ $k$. k $\in$ NAT $\wedge$ **size**(_Scheduler_A_) = $2k$
       action:  _Scheduler_A_:=_Append_(_Scheduler_A_, _CK_)

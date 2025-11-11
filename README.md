@@ -93,6 +93,7 @@ guard_per: _Scheduler_A_ $\neq$ $\emptyset$ $\Rightarrow$ CK - **BefLast**(_Sche
 <p align="center">
 <img width="600" height="120" alt="n" src="https://github.com/user-attachments/assets/7121ca69-12c3-4552-ba1f-c0d7794def10" />
 </p>
+
 1. **Event Start_A**:  
       guard: $\exists$ $k$. k $\in$ NAT $\wedge$ **size**(_Scheduler_A_) = $2k$
       action:  _Scheduler_A_:=_Append_(_Scheduler_A_, _CK_)

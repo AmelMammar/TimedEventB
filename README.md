@@ -33,7 +33,7 @@ The plugin **chronoEventB** permits to specify timing properties on Event-B mode
        
    #### Installation of the theory TaskScheduler
    Three steps are required: 
-   1. Install the theory plugin:
+   1. Install the theory plugin: see [Here](https://wiki.event-b.org/index.php/Theory_Plug-in)
       
    2. Import the theory Scheduler under Rodin by selecting the entry _Import_ under the menu _File_: 
 

@@ -12,8 +12,8 @@ The plugin **chronoEventB** permits to specify timing properties on Event-B mode
    1. The Rodin extension that add buttons to the Rodin menu for creating tasks as Event-B and decorating them with timing constraints. 
    2. The theory Scheduler that defines a new Event-B data type named _TaskScheduler_ along with different operators allowing to manipulate it (last, append,etc.). This theory also define a set of theorems and inference rules that help users to prove the correctness the timing properties on an Event-B component. 
    
-   ### Instalation
-   #### Instalation of the Rodin extension
+   ### Installation
+   #### Installation of the Rodin extension
    To extend Rodin with chronoEventB plugin, follow these steps:
    1. Download and unzip the zip file plugin.
    2. Go to the menu 

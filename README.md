@@ -23,8 +23,10 @@ The plugin **chronoEventB** permits to specify timing properties on Event-B mode
       </p>
       
    4. Click the button _Local_ and select the directory associated to the plugin:
-
-
+   
+   <p align="center">
+      <img width="400" height="400" alt="sec" src="https://github.com/user-attachments/assets/7eaecbf0-ca59-4b59-8021-d7a6e84b2cef" />
+   </p>
       
 
       

@@ -125,8 +125,8 @@ Creating such constraint makes the related event decorated with a _FOLLOWED_BY_ 
 
 Constraint _PrecededBy_ is similar to the constraint _FollowedBy_. A task _A_ must be preceded by a task _B_ means that it should exists an occurence of the task _B_  that starts (or start and accomplished its execution) before begining each occurence of _A_.
  
-  *Contributors*
-  [Amel Mammar](amel.mammar@telecom-sudparis.eu), IP Paris/Télécom SudParis
-  [FEUKENG MOMO Cabrel](feukengcabrel13@gmail.com), IP Paris/Télécom SudParis
+  ## Contributors
+  [Amel Mammar](amel.mammar@telecom-sudparis.eu), IP Paris/Télécom SudParis  
+  [Feukeng Mono Cabrel](feukengcabrel13@gmail.com), IP Paris/Télécom SudParis
   
    

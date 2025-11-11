@@ -77,7 +77,8 @@ To create a task using our plugin, click on the  button **Te**. Then select its 
    <p align="center">
     <img width="600" height="600" alt="atomicTask" src="https://github.com/user-attachments/assets/fbf52dbc-b290-45f4-927b-56c019835d4b" />
    </p>
-For each task _A_, we have  a variable _Scheduler_A_ which denotes an increasing sequence of value pairs (_start_, _end_) for each  execution of the task _A_. An atomic task  _A_ is represented by a unique event _Atomic_A_. Event _Atomic_A_has the follwowing implicit guard/action:
+   
+For each task _A_,  we have  a variable _Scheduler_A_ which denotes an increasing sequence of value pairs (_start_, _end_) for each  execution of the task _A_. An atomic task  _A_ is represented by a unique event _Atomic_A_. Event _Atomic_A_ has the follwowing implicit guard/action:
 
 guard: CK > last(_Scheduler_A_) //to ensure that two different instances of the task _A_ do not occur at the same time  
 action: _Scheduler_A_:=_Append_(_Append_(_Scheduler_A_, _CK_), _CK_)//Append denotes the append operation of sequences

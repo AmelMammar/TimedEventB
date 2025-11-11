@@ -88,7 +88,7 @@ conseuctive instances. This constraint induces the following implicit guard:
 
 guard_per: _Scheduler_A_ $\neq$ $\emptyset$ $\Rightarrow$ CK - **BefLast**(_Scheduler_A_) $\geq$ / $\leq$ PSMin/PSMax //**BefLast**(_Scheduler_A_) denotes the before last element of the sequence _Scheduler_A_.
   
-**Case of a task with duration**: the creation of a task with duration produces the following Event-B specificaition. Two events _Start_A__ and __End_A_are defined. The _duration_ property (Minimun/maximum values DMin/DMax) is attached to the end event. These events include the following implicit guards/actions:
+**Case of a task with duration**: the creation of a task with duration produces the following Event-B specificaition. Two events _Start_A__ and __End_A_ are defined. The _duration_ property (Minimun/maximum values DMin/DMax) is attached to the end event. These events include the following implicit guards/actions:
 
 <p align="center">
 <img width="600" height="120" alt="n" src="https://github.com/user-attachments/assets/7121ca69-12c3-4552-ba1f-c0d7794def10" />
@@ -99,7 +99,7 @@ guard_per: _Scheduler_A_ $\neq$ $\emptyset$ $\Rightarrow$ CK - **BefLast**(_Sche
 
       action:  _Scheduler_A_:=_Append_(_Scheduler_A_, _CK_)
 
-3. **Event End_A**:  
+2. **Event End_A**:  
       guard: $\exists$ $k$. k $\in$ NAT $\wedge$ **size**(_Scheduler_A_) = $2k$ + 1 $\wedge$ _CK_ - **last**(_Scheduler_A_)  { $\geq$, $\leq$} {_DMin_ , _DMax_}
    
       action:  _Scheduler_A_:=_Append_(_Scheduler_A_, _CK_)
@@ -108,7 +108,17 @@ guard_per: _Scheduler_A_ $\neq$ $\emptyset$ $\Rightarrow$ CK - **BefLast**(_Sche
  (a) Seperation: puts a constraint on the elapsed time between the end of an ocurrence and the start of the  next one. 
  (b) Periodicity: puts a constraint on the elapsed time between the starts of two consecutive occurences. This constraint is associated with the start event. 
 
- Both properties are attached to the _Start_A_ (resp. _Atomic_A_) event for non-atomic (resp. atomic) task. They induce implicit invariants/guards than can be displayed using [ProB](https://stups.hhu-hosting.de/rodin/prob1/nightly).
+Both properties are attached to the _Start_A_ (resp. _Atomic_A_) event for non-atomic (resp. atomic) task. They induce implicit invariants/guards than can be displayed using [ProB](https://stups.hhu-hosting.de/rodin/prob1/nightly).
+
+**Bi-task properties**
+On two distinct tasks, the follwoing ordering constraints can be defined:
+1. FollowedBy: a task _A_ must be followed by a task _B_ means that it should exists an occurence of the task _B_ between evry two distinct occurences of _A_. The figure bellow depicts how such dependecy is created.
+
+<p align="center">
+   <img width="400" height="400" alt="follow" src="https://github.com/user-attachments/assets/80ba327f-9f0d-4bc6-a4f3-64da7a091471" />
+</p>
+
+
 
  
   

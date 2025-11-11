@@ -100,7 +100,7 @@ guard_per: _Scheduler_A_ $\neq$ $\emptyset$ $\Rightarrow$ CK - **BefLast**(_Sche
       action:  _Scheduler_A_:=_Append_(_Scheduler_A_, _CK_)
 
 3. **Event End_A**:  
-      guard: $\exists$ $k$. k $\in$ NAT $\wedge$ **size**(_Scheduler_A_) = $2k$ + 1 $\wedge$ _CK_ - **last**(_Scheduler_A_)  $\geq$ / $\leq$ _DMin_/_DMax_
+      guard: $\exists$ $k$. k $\in$ NAT $\wedge$ **size**(_Scheduler_A_) = $2k$ + 1 $\wedge$ _CK_ - **last**(_Scheduler_A_)  { $\geq$, $\leq$} {_DMin_ , _DMax_}
    
       action:  _Scheduler_A_:=_Append_(_Scheduler_A_, _CK_)
 

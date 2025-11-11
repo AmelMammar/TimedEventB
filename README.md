@@ -13,6 +13,9 @@ The plugin **chronoEventB** permits to specify timing properties on Event-B mode
    
    ### Instalation
    #### Instalation of the Rodin extension
+   To extend Rodin with chronoEventB plugin, follow these steps:
+   1. Download and unzip the zip file plugin.
+   2. Go to the menu 
    #### Instalation of the theory
    Three steps are required: 
    1. Install the theory plugin:

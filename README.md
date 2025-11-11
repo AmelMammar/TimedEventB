@@ -72,7 +72,7 @@ To create a task using our plugin, click on the  button **Te**. Then select its 
    <img width="400" height="400" alt="atomicTask" src="https://github.com/user-attachments/assets/a7356655-1b3d-4eda-971a-b876184ac0bd" />
 </p>
 
-**Case of an atomic task**: the creation of an atomic task produces the following Event-B specificaition. To deal with timing properties, a master variable _CK_ along with a _Progress_ event are defined. This event makes time progress by a given non null amont of time _Step_. Of course, the master varaible and the associated event are created once while creating the first task.
+**Case of an atomic task**: an atomic task does not take time to complete, it is instantaneous. The creation of an atomic task produces the following Event-B specificaition. To deal with timing properties, a master variable _CK_ along with a _Progress_ event are defined. This event makes time progress by a given non null amont of time _Step_. Of course, the master varaible and the associated event are created once while creating the first task.
 
    <img width="988" height="699" alt="atomicTask" src="https://github.com/user-attachments/assets/fbf52dbc-b290-45f4-927b-56c019835d4b" />
 

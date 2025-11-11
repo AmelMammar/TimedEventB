@@ -111,7 +111,7 @@ guard_per: _Scheduler_A_ $\neq$ $\emptyset$ $\Rightarrow$ CK - **BefLast**(_Sche
 Both properties are attached to the _Start_A_ (resp. _Atomic_A_) event for non-atomic (resp. atomic) task. They induce implicit invariants/guards than can be displayed using [ProB](https://stups.hhu-hosting.de/rodin/prob1/nightly).
 
 **Bi-task properties**
-On two distinct tasks, two ordering constraints can be defined: _FollowedBy_ and _PrecededBy_. A task _A_ must be followed by a task _B_ means that it should exists an occurence of the task _B_ between evry two distinct occurences of _A_. The figure bellow depicts how such dependecy is created. Depending on the task type, users have to select the event _Atomic_A_ (resp. _End_A_) for an atomic task (resp. task with duration).
+On two distinct tasks, two ordering constraints can be defined: _FollowedBy_ and _PrecededBy_. A task _A_ must be followed by a task _B_ means that it should exist an occurence of the task _B_ between evry two distinct occurences of _A_. The figure bellow depicts how such dependecy is created. Depending on the task type, users have to select the event _Atomic_A_ (resp. _End_A_) for an atomic task (resp. task with duration).
    
 <p align="center">
    <img width="400" height="400" alt="follow" src="https://github.com/user-attachments/assets/80ba327f-9f0d-4bc6-a4f3-64da7a091471" />
@@ -123,7 +123,7 @@ Creating such constraint makes the related event decorated with a _FOLLOWED_BY_ 
 <img width="400" height="400" alt="followB" src="https://github.com/user-attachments/assets/a8a35bfe-5d64-4c5f-8ee3-08eb4cb64ec5" />
 </p>
 
-Constraint _PrecededBy_ is similar to the constraint _FollowedBy_. A task _A_ must be preceded by a task _B_ means that it should exists an occurence of the task _B_  that started (or started and accomplished its execution) before begining each occurence of _A_.
+Constraint _PrecededBy_ is similar to the constraint _FollowedBy_. A task _A_ is preceded by a task _B_ means that it should exist an occurence of the task _B_  that started (or started and accomplished its execution) before begining each occurence of _A_.
  
   ## Contributors
   [Amel Mammar](amel.mammar@telecom-sudparis.eu), IP Paris/Télécom SudParis  

@@ -74,7 +74,7 @@ To create a task using our plugin, click on the  button **Te**. Then select its 
 
 **Case of an atomic task**: an atomic task does not take time to complete, it is instantaneous. The creation of an atomic task produces the following Event-B specificaition. To deal with timing properties, a master variable _CK_ along with a _Progress_ event are defined. This event makes time progress by a given non null amont of time _Step_. Of course, the master varaible and the associated event are created once while creating the first task.
 
-   <img width="988" height="699" alt="atomicTask" src="https://github.com/user-attachments/assets/fbf52dbc-b290-45f4-927b-56c019835d4b" />
+   <img width="600" height="600" alt="atomicTask" src="https://github.com/user-attachments/assets/fbf52dbc-b290-45f4-927b-56c019835d4b" />
 
 For each task _A_, we have  a variable _Scheduler_A_ which denotes an increasing sequence of value pairs (_start_, _end_) for each  execution of the task _A_. An atomic task  _A_ is represented by a unique event _Atomic_A_. Event _Atomic_A_has the follwowing implicit guard/action:
 

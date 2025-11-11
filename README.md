@@ -62,17 +62,7 @@ The plugin **chronoEventB** permits to specify timing properties on Event-B mode
    <img width="400" height="400" alt="createExample" src="https://github.com/user-attachments/assets/2e0b9a54-952a-4e0f-9cc4-7d9c5d655170" />
 </p>
 
-
-
-
-
-
-
-These properties are mainly attached to tasks represented as Event-B events. For that purpose, we distinguish two task types:
-
-1. Atomic tasks: these tasks are instantaneous and do not take time to complete.
-2. Non atomic tasks: these tasks are not instantaneous and have duration.
-
+### chronoEvent by example
 To create a task using our plugin, click on the  button **Te**. Then select its type . 
    <img width="1234" height="508" alt="createTak" src="https://github.com/user-attachments/assets/a3adc51b-4c04-406c-95dc-98c3c58f1330" />
 

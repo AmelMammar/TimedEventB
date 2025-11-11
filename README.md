@@ -4,24 +4,25 @@
 </p>
 </h1>
 
-The plugin **chronoEventB** permits to specify timing properties on Event-B models. Using this plugin, users have the possibililty to define _atomic_ tasks or tasks with _duration_ as specific Event-B events. To each task, _periodicity_ and _separation_ constaints may be attached. Moreover, ordering properties can be associated with a couple of tasks to state constaints on the occurence of their instances. These properties may be also timed.
+The plugin **chronoEventB** permits to specify timing properties on Event-B models. Using this plugin, users have the possibililty to define _atomic_ tasks and tasks with _duration_ as specific Event-B events. To each task, _periodicity_ and _separation_ constaints may be attached. Moreover, ordering properties can be associated with a couple of tasks to state constaints on the occurence of their instances. These properties may be also timed.
 
 ## How to use chronoEventB
 ### Components 
    The plugin is composed of two main components:
-   1. The Rodin extension that add buttons to the Rodin menu for creating tasks as Event-B and decorating them with timing constraints. 
-   2. The theory Scheduler that defines a new Event-B data type named _TaskScheduler_ along with different operators allowing to manipulate it (last, append,etc.). This theory also define a set of theorems and inference rules that help users to prove the correctness the timing properties on an Event-B component. 
+   1. The Rodin extension that adds buttons to the Rodin menu for creating tasks as Event-B events and decorating them with timing constraints. 
+   2. The theory Scheduler that defines a new Event-B data type named _TaskScheduler_ along with different operators allowing to manipulate it (last, append,etc.). This theory also defines a set of theorems and inference rules that help users to prove the correctness of timing properties on an Event-B component. 
    
    ### Installation
    #### Installation of the Rodin extension
-   To extend Rodin with chronoEventB plugin, follow these steps:
+   To extend Rodin with the chronoEventB plugin, follow these steps:
    1. Download and unzip the zip file plugin.
-   2. Go to the menu 
-   #### Installation of the theory
+   2. Go to the menu
+       
+   #### Installation of the theory TaskScheduler
    Three steps are required: 
    1. Install the theory plugin:
       
-   2. Import the theory Scheduler under Rodin by selecting the entry _Import_under the menu _File_: 
+   2. Import the theory Scheduler under Rodin by selecting the entry _Import_ under the menu _File_: 
 
    <p align="center">
    <img width="500" height="500" alt="importThe" src="https://github.com/user-attachments/assets/f24eb979-439d-42fb-8588-ba29779c2b5e" />

@@ -66,8 +66,11 @@ The plugin **chronoEventB** permits to specify timing properties on Event-B mode
 </p>
 
 ### chronoEvent by example
-To create a task using our plugin, click on the  button **Te**. Then select its type . 
-   <img width="1234" height="508" alt="createTak" src="https://github.com/user-attachments/assets/a3adc51b-4c04-406c-95dc-98c3c58f1330" />
+To create a task using our plugin, click on the  button **Te**. Then select its type. 
+
+<p align="center">
+   <img width="400" height="400" alt="atomicTask" src="https://github.com/user-attachments/assets/a7356655-1b3d-4eda-971a-b876184ac0bd" />
+</p>
 
 **Case of an atomic task**: the creation of an atomic task produces the following Event-B specificaition. To deal with timing properties, a master variable _CK_ along with a _Progress_ event are defined. This event makes time progress by a given non null amont of time _Step_. Of course, the master varaible and the associated event are created once while creating the first task.
 

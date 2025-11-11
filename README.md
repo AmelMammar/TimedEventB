@@ -32,8 +32,8 @@ The plugin **chronoEventB** permits to specify timing properties on Event-B mode
  <img width="400" height="400" alt="last2" src="https://github.com/user-attachments/assets/c3b466b3-eb0f-4fc9-8b91-fe33fc2fc644" />
  </p>
    
-   5. Select the plugin _ChronoEventB_and press on _Next_ to complete the installation
-      <img width="1284" height="1262" alt="last3" src="https://github.com/user-attachments/assets/a170364c-ce34-4fcf-b449-1de9bc109470" />
+   5. Select the plugin _ChronoEventB_and press on _Next_ to complete the installation.
+      <img width="400" height="400" alt="last3" src="https://github.com/user-attachments/assets/a170364c-ce34-4fcf-b449-1de9bc109470" />
 
          
    

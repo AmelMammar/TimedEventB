@@ -65,7 +65,7 @@ The plugin **chronoEventB** permits to specify timing properties on Event-B mode
    <img width="400" height="400" alt="createExample" src="https://github.com/user-attachments/assets/2e0b9a54-952a-4e0f-9cc4-7d9c5d655170" />
 </p>
 
-### chronoEvent by example
+### chronoEventB by example
 To create a task using our plugin, click on the  button **Te**. Then select its type. 
 
 <p align="center">
